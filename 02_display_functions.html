@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display Functions</title>
+    <!-- offline cdn -->
+    <script src="jqurey.js"></script>
+
+    <script>
+      // ===Hide=====
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $(".head").hide(2000);
+        });
+
+        // ======Show======
+        $("#btn2").click(function () {
+          $(".head").show(2000);
+        });
+
+        // ======Toggle=======
+        $("#btn3").click(function () {
+          $(".head2").toggle(2000);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Display Functions
+=====> 3 functions is there : (1)hide() (2)show() (3)toggel()-->
+
+    <button id="btn1">Hide function</button>
+    <button id="btn2">Show function</button>
+    <button id="btn3">Toggle function</button>
+
+    <h1 class="head">Ayyappa swami</h1>
+    <h1 class="head2">Jay Hanuman</h1>
+  </body>
+</html>

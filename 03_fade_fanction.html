@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fade fanction</title>
+    <!-- jqurey cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#btn1").click(function () {
+          $(".div1").fadeIn(5000);
+        });
+
+        $("#btn2").click(function () {
+          $(".div1").fadeOut(2000);
+        });
+
+        $("#btn3").click(function () {
+          $(".div2").fadeToggle(2000);
+        });
+
+        $("#btn4").click(function () {
+          $(".div3").fadeTo(2000, 0.5);
+        });
+      });
+    </script>
+    <style>
+      .div1 {
+        display: none;
+        height: 100px;
+        width: 100px;
+        background-color: darkkhaki;
+        margin-left: 20px;
+      }
+      .div2 {
+        height: 100px;
+        width: 100px;
+        background-color: black;
+        margin-left: 20px;
+      }
+      .div3 {
+        height: 100px;
+        width: 100px;
+        background-color: red;
+        margin-left: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- fade function are:(1)fadeIn() (2)fadeOut() (3)fadeToggle() (4)fadeto() -->
+    <!-- these functions are worked on opacity.
+    (1)fadeIn()    = display content.
+    (2)fadeOut()   = hide content.
+    (3)fadeToggle()=dispaly and hide content.
+    (4)fadeTo()    =set to opacity.
+    -->
+
+    <button id="btn1">fadeIn</button>
+    <button id="btn2">fadeOut</button>
+    <button id="btn3">fadeToggle</button>
+    <button id="btn4">fadeto</button>
+
+    <hr />
+    <div class="div1"></div>
+    <br />
+    <div class="div2"></div>
+    <br />
+    <div class="div3"></div>
+  </body>
+</html>
