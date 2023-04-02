@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bxslider background</title>
+    <!-- jqurey cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- bxslider css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <!-- bxslider js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script>
+       $(function(){
+        $('.bxslider').bxSlider({
+            mode:"fade",
+            speed:100,
+            pager: false,
+            controls:false,
+            auto:true,
+            autoHover:true
+        });
+       })
+    </script>
+    <style>
+        .slider1{
+            background-image: url(img2.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+        }
+        .slider2{
+            background-image: url(img3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+        }
+        .slider3{
+            background-image: url(img4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+        }
+        .slider4{
+            background-image: url(img5.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bxslider">
+        <div class="slider1"><h1 style="color: aqua;">Na Yesayya</h1></div>
+        <div class="slider2"> <h1 style="color: aqua;">karunamayuda</h1></div>
+        <div class="slider3"><h1 style="color: aqua;">parishudduda</h1></div>
+        <div class="slider4"><h1 style="color: aqua;">mahonnathuda</h1> </div>
+    </div>
+</body>
+</html>

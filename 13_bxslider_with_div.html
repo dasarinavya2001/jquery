@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bxslider background</title>
+    <!-- jqurey cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- bxslider css cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.css">
+    <!-- bxslider js cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
+    <script>
+       $(function(){
+        $('.bxslider').bxSlider({
+            mode:"fade",
+            speed:100,
+            pager: false,
+            controls:false,
+            auto:true,
+            autoHover:true
+        });
+       })
+    </script>
+    <style>
+        img{
+            height: 600px;
+            width: 100%;
+        }
+        .slider-flex{
+            display: flex;
+        }
+        .slider-flex .leftside{
+            flex: 1;
+        }
+        .slider-flex .rightside{
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="bxslider">
+    <div class="slider-1">
+        <div class="slider-flex">
+            <div class="leftside">
+                <h1>I Love My Jesus</h1>
+            </div>
+            <div class="rightside">
+                <img src="img2.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="slider-1">
+        <div class="slider-flex">
+            <div class="leftside">
+                <h1>I Love My Father</h1>
+            </div>
+            <div class="rightside">
+                <img src="img4.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
