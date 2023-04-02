@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.regpage{
+    height: auto;
+    width: 1000px;
+    margin: 20px auto;
+    border: 2px solid black;
+    background-color: green;
+    border-radius: 40px;
+
+}
+h1{
+    padding-bottom: 20px;
+    text-align: center;
+}
+.row{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.col-1{
+    flex: 1;
+    text-align: right;
+    padding: 0px 5px;
+}
+.col-2{
+    flex: 2;
+}
+label{
+    font-size: 18px;
+}
+span{
+    color: orange;
+    font-size: 18px;
+}
+input[type="text"],[type="date"],input[type="password"]{
+    height: 30px;
+    width: 300px;
+    font-size: 16px;
+    padding: 0px 8px;
+}
+select{
+    height: 30px;
+    width: 300px;
+}
+.radio{
+    height: 20px;
+    width: 20px;
+}
+input[type="text"]:focus-within{
+    outline: none;
+}
+input[type="password"]:focus-within{
+    outline: none;
+}
+button{
+    height: 40px;
+    width: 140px;
+    border-radius:10px;
+    color: green;
+    background-color: rgba(0, 0, 0, 0.863);
+    font-weight: 600;
+}

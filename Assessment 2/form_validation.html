@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="reg_ex.js"></script>
+</head>
+<body>
+    <div class="regpage">
+        <h1>REGISTRATION PAGE</h1>
+        <form action="#" name="form1" method="get">
+            <!-- =====First Name======= -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">First Name:</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" name="" id="fname" onkeyup="return firstname_reg_ex()">
+                </div>
+                <div class="col-2">
+                    <span id="msg"></span>
+                </div>
+            </div>
+            <!-- ========Last Name======= -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Last Name:</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" name="" id="lname" onkeyup="return lastname_reg_ex()">
+                </div>
+                <div class="col-2">
+                    <span id="msg1"></span>
+                </div>
+            </div>
+            <!-- ========Gender========= -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Gender:</label>
+                </div>
+                <div class="col-2">
+                    <input type="radio" class="radio" name="gen" id="male">
+                    <label for="">Male</label>
+                    <input type="radio" class="radio" name="gen" id="female">
+                    <label for="">Female</label>
+                    <input type="radio" class="radio" name="gen" id="others">
+                    <label for="">Others</label>
+                </div>
+                <div class="col-2">
+                    <span id="msg2"></span>
+                </div>
+            </div>
+            <!-- ======Date -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Date Of Birth:</label>
+                </div>
+                <div class="col-2">
+                    <input type="date" name="" id="DOB">
+                </div>
+                <div class="col-2">
+                    <span id="msg3"></span>
+                </div>
+            </div>
+            <!-- =======Address========== -->
+             <div class="row">
+                <div class="col-1">
+                    <label for="">Address:</label>
+                </div>
+                <div class="col-2">
+                    <textarea name="" id="address" cols="38" rows="5" placeholder="Address Must Be In 15 To 50 character" maxlength="100" onblur="return check_address()"></textarea>
+                </div>
+                <div class="col-2">
+                    <span id="msg4"></span>
+                </div>
+            </div> 
+            <!-- ========City============= -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">City:</label>
+                </div>
+                <div class="col-2">
+                   <select name="" id="city">
+                    <option value="-1">-----Select------</option>
+                    <option value="">Telangana</option>
+                    <option value="">Gujarat</option>
+                    <option value="">Hyderabad</option>
+                   </select>
+                </div>
+                <div class="col-2">
+                    <span id="msg5"></span>
+                </div>
+            </div>
+            <!-- ====Email Id===== -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Email:</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" name="" id="mail" onblur="return reg_ex_email()">
+                </div>
+                <div class="col-2">
+                    <span id="msg6"></span>
+                </div>
+            </div>
+            <!-- ====Password====== -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Password:</label>
+                </div>
+                <div class="col-2">
+                    <input type="password" name="" id="pass" onblur="return check_password()" >
+                </div>
+                <div class="col-2">
+                    <span id="msg7"></span>
+                </div>
+            </div>
+             <!-- ==== Confirm Password====== -->
+             <div class="row">
+                <div class="col-1">
+                    <label for=""> Confirm Password:</label>
+                </div>
+                <div class="col-2">
+                    <input type="password" name="" id="cpass"  onkeyup=" return check_cpassword()">
+                </div>
+                <div class="col-2">
+                    <span id="msg8"></span>
+                </div>
+            </div>
+             <!-- ==== Show Password====== -->
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2">
+                    <input type="checkbox" onclick="return hide_show_password()">
+                    <label for="">Show Password</label>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <!-- ======Moblie Number==== -->
+            <div class="row">
+                <div class="col-1">
+                    <label for="">Mobile Number:</label>
+                </div>
+                <div class="col-2">
+                    <input type="text" name="" id="mno" onkeyup="return check_mobile()" maxlength="10" onblur="return check_mobile_length()">
+                </div>
+                <div class="col-2">
+                    <span id="msg9"></span>
+                    <span id="msg10"></span>
+                </div>
+            </div>
+        <!-- =====Button====== -->
+        <div class="row">
+            <div class="col-1">
+            </div>
+            <div class="col-2">
+                <button type="submit" onclick="return all_blank()">Register Here</button>
+            </div>
+        </div>
+        </form>
+        <p style="color: black; padding: 20px 40px; ">Note:To check a password between 8 to 15 characters which contain at least one lowercase letter, one uppercase letter, one numeric digit, and one special character</p>
+    </div>
+</body>
+</html>
