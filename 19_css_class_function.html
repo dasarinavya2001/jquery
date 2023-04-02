@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css class function</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+        .head1{
+            color: darkblue;
+            background-color: lightcoral;
+            font-size: 50px;
+            font-weight: 300;
+        }
+        .head2{
+            color: lightgreen;
+            background-color: darkblue;
+            font-size: 60px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#head1").addClass("head1")
+            })
+
+            $("#btn2").click(function(){
+                $("#head1").removeClass("head1")
+            })
+            $("#btn3").click(function(){
+                $("#head2").toggleClass("head2")
+            })
+        })
+    </script>
+</head>
+<body>
+    <!--css class functions are 3 functions
+    (1)addclass() (2)removeclass() (3)toggleclass()-->
+
+    <button id="btn1">Addclass</button>
+    <button id="btn2">Removeclass</button>
+    <button id="btn3">Toggleclass</button>
+
+    <h1 id="head1">sarava shakthi manthuda</h1>
+    <h1 id="head2">parishudduda</h1>
+</body>
+</html>
